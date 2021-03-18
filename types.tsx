@@ -9,7 +9,7 @@ export type BottomTabParamList = {
 };
 
 export type TabOneParamList = {
-  TabOneScreen: undefined;
+  KrishnaColors: undefined;
 };
 
 export type TabTwoParamList = {
