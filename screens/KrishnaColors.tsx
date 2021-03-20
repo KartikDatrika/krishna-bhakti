@@ -5,13 +5,14 @@ import { FlatList } from 'react-native-gesture-handler';
 import { KrishnaAltarURIs } from './KrishnaAltarURIs';
 
 const styles = StyleSheet.create({
-  white:{
-    color: "white"
-  },
   container: {
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  white: {
+    justifyContent: 'center',
+    color: "white"
   },
   list: {
     flexDirection: "row",
@@ -53,7 +54,7 @@ export default function KrishnaColors() {
   let newState = { ...currentState };
 
   return (
-    <View style={styles.container}>
+    <View style={{ ...styles.container, backgroundColor: currentState.krishnaAltars[currentState.focusedAltar].color}}>
       <Text style={styles.white}> {"Hare Krishna Hare Krishna Krishna Krishna Hare Hare !"} </Text>
       <Text style={styles.white}> {"Hare Rama Hare Rama Rama Rama Hare Hare !"} </Text>
       <Text style={styles.white}> {"All Glories to Prabhupada !!"} </Text>
