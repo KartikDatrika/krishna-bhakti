@@ -9,6 +9,35 @@ npm-debug.*
 *.orig.*
 web-build/
 
+__tests__
+
+ios
+node_modules
+android/gradlew
+android/gradle
+android/gradlew.bat
+android/gradle.properties
+android/settings.gradle
+android/app/build
+android/app/_BUCK
+android/app/build_defs.bzl
+android/app/debug.keystore
+android/app/proguard-rules.pro
+android/app/build_defs.bzl
+android/app/src/main/res
+
+
+tsconfig.json
+yarn.lock
+metro.config.js
+babel.config.js
+.watchmanconfig
+.gitattributes
+.prettierrc.js
+android/.gradle
+.buckconfig
+.editorconfig
+.eslintrc.js
 # macOS
 .DS_Store
 yarn.lock
